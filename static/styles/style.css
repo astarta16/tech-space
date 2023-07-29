@@ -781,6 +781,7 @@ button:hover {
   }
 }
 
+/* responsive style */
 @media (max-width: 480px) {
   .hero-container h1 {
     font-size: 36px;
