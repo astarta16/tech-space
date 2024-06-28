@@ -762,7 +762,6 @@ button:hover {
   line-height: 1.6;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
