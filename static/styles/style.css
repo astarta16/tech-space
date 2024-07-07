@@ -1,0 +1,55 @@
+header {
+  background-color: white;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li {
+  margin-left: 0;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.tech {
+  color: black;
+}
+
+.space {
+  color: blue;
+}
+
+header button {
+  background-color: #0000ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+header button:hover {
+  background-color: lightblue;
+  color: black;
+}
+
+header a {
+  font-size: 21px;
+}
