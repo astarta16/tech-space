@@ -1,18 +1,8 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow-x: hidden;
-}
 
 header {
   position: fixed;
   width: 100%;
-  padding: 20px 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-  transition: background-color 0.3s;
+  background-color: rgba(255, 251, 251, 0.811);
   z-index: 1000;
 }
 
@@ -34,14 +24,14 @@ header nav ul {
 
 header nav ul li a {
   margin-left: 0;
-  color: white;
+  color: navy;
   font-weight: 700;
 }
 
 .logo {
   font-size: 40px;
   font-weight: 900;
-  color: white;
+  color: #191970;
 }
 
 header a {
@@ -71,10 +61,10 @@ header a {
 .btn-hover.color-btn {
   background-image: linear-gradient(
     to right,
-    #25aae1,
+    #34588a,
     #4481eb,
-    #064458,
-    #3f86ed
+    #061586,
+    #0958ce
   );
   box-shadow: 0 4px 15px 0 rgba(4, 79, 190, 0.75);
 }
