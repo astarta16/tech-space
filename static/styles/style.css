@@ -69,11 +69,51 @@ header a {
 }
 
 .hero-image {
+  position: relative;
   background-image: url("../images/main.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+.hero-text {
+  color: white;
+  font-size: 48px; /* Larger font size for better visibility */
+  font-weight: bold;
+  width: 60%; /* Adjust width to ensure text breaks into three lines */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  animation: fadeInSlideUp 3s ease-in-out, scaleUp 5s ease-in-out infinite;
+  line-height: 1.5;
+}
+
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
 
 .burger-menu {
   display: none;
