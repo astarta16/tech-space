@@ -187,6 +187,54 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+
+.courses-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.courses-title {
+  margin-bottom: 30px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  justify-content: center;
+
+}
+
+.course-card {
+  background: #1a1a1a;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px; 
+  margin: 0 auto; 
+}
+
+.course-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.course-info {
+  padding: 15px;
+}
+
+.course-info h3 {
+  margin-top: 0;
+}
+
+.course-link {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+
 /* footer styles */
 footer {
   color: navy;
