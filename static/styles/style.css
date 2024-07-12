@@ -11,10 +11,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative; /* Ensure positioning context is set for z-index */
+  z-index: 10; /* Higher than the image */
 }
+
 
 .hamburger {
   display: none;
+  cursor: pointer;
+  z-index: 1001; /* Hamburger should be on top when visible */
 }
 
 .bar {
@@ -31,6 +36,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav-menu.active {
+  left: 0;
+  z-index: 1000; 
 }
 
 .nav-item {
