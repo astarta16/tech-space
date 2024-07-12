@@ -11,15 +11,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative; /* Ensure positioning context is set for z-index */
-  z-index: 10; /* Higher than the image */
+  position: relative;
+  z-index: 10;
 }
-
 
 .hamburger {
   display: none;
   cursor: pointer;
-  z-index: 1001; /* Hamburger should be on top when visible */
+  z-index: 1001;
 }
 
 .bar {
@@ -40,7 +39,7 @@ header {
 
 .nav-menu.active {
   left: 0;
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 .nav-item {
@@ -134,6 +133,7 @@ header {
   }
 }
 
+/* courses page */
 .image-container {
   position: relative;
   width: 100%;
@@ -187,6 +187,7 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* footer styles */
 footer {
   color: navy;
   display: flex;
