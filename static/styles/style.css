@@ -187,10 +187,10 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-
 .courses-section {
   text-align: center;
   margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 .courses-title {
@@ -199,9 +199,16 @@ header {
 
 .courses-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   justify-content: center;
+  padding: 0 20px;
+}
 
+@media (min-width: 992px) {
+  .courses-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .course-card {
@@ -210,9 +217,18 @@ header {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 300px; 
-  margin: 0 auto; 
-  margin-bottom: 30px;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.course-info {
+  padding: 10px;
+}
+
+.course-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .course-card img {
@@ -231,10 +247,9 @@ header {
 }
 
 .course-link {
-  color: #4CAF50;
+  color: #4caf50;
   text-decoration: none;
 }
-
 
 /* footer styles */
 footer {
@@ -243,6 +258,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .footer-container {
@@ -252,24 +268,22 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 10px 0;
+  padding: 20px 0;
+  background: #f8f9fa;
 }
 
 .footer-content p {
   font-weight: 700;
   font-size: 20px;
+  color: #34588a;
 }
 
-.social-media {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
+.social-media a {
+  transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+  transform: scale(1.1);
 }
 
 .social-media a img {
@@ -281,12 +295,14 @@ footer {
   .footer-container {
     flex-direction: column;
     align-items: center;
+    padding: 20px;
   }
 
   .social-media,
   .footer-content {
     flex: 1 100%;
     text-align: center;
+    margin-top: 10px;
   }
 
   .footer-content {
