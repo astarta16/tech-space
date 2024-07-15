@@ -194,7 +194,10 @@ header {
 }
 
 .courses-title {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 40px;
+  color: #061586;
 }
 
 .courses-grid {
