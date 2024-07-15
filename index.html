@@ -1,72 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./static/styles/style.css" />
     <link rel="stylesheet" href="./static/styles/reset.css" />
     <title>Tech Space Website</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <nav class="navbar container">
-            <a href="#" class="nav-logo">TechSpace.</a>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./static/pages/course.html" class="nav-link">Course</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./static/pages/blog.html" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./static/pages/about.html" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <button class="btn-hover color-btn" onclick="openModal()">Log In</button>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
+      <nav class="navbar container">
+        <a href="#" class="nav-logo">TechSpace.</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./static/pages/course.html" class="nav-link">Course</a>
+          </li>
+          <li class="nav-item">
+            <a href="./static/pages/blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="./static/pages/about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn-hover color-btn" onclick="openModal()">
+              Log In
+            </button>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
     </header>
 
     <div id="loginModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Login</h2>
-            <form action="/submit-your-login-form" method="POST">
-                <div class="input-group">
-                    <label for="email">Gmail:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="input-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <button type="submit" class="log-button">Log In</button>
-            </form>
-        </div>
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Login</h2>
+        <form action="/submit-your-login-form" method="POST">
+          <div class="input-group">
+            <label for="email">Gmail:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit" class="log-button">Log In</button>
+        </form>
+      </div>
     </div>
 
     <main></main>
     <footer>
-        <div class="footer-container container">
-            <a href="#" class="nav-logo">TechSpace.</a>
-            <div class="footer-content">
-                <p>Contact: +995 23 12 23</p>
-            </div>
-            <div class="social-media">
-                <a href="https://facebook.com"><img src="./static/images/facebook.png" alt="Facebook"/></a>
-                <a href="https://youtube.com"><img src="./static/images/instagram.png" alt="YouTube"/></a>
-                <a href="https://youtube.com"><img src="./static/images/tik-tok.png" alt="YouTube"/></a>
-            </div>
+      <div class="footer-container container">
+        <a href="#" class="nav-logo">TechSpace.</a>
+        <div class="footer-content">
+          <p>Contact: +995 23 12 23</p>
         </div>
+        <div class="social-media">
+          <a href="https://facebook.com"
+            ><img src="./static/images/facebook.png" alt="Facebook"
+          /></a>
+          <a href="https://youtube.com"
+            ><img src="./static/images/instagram.png" alt="YouTube"
+          /></a>
+          <a href="https://youtube.com"
+            ><img src="./static/images/tik-tok.png" alt="YouTube"
+          /></a>
+        </div>
+      </div>
     </footer>
 
     <script src="./static/js/index.js"></script>

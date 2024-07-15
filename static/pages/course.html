@@ -27,9 +27,11 @@
           <li class="nav-item">
             <a href="./about.html" class="nav-link">About</a>
           </li>
-          <div>
-            <button class="btn-hover color-btn nav-item">Log In</button>
-          </div>
+          <li class="nav-item">
+            <button class="btn-hover color-btn" onclick="openModal()">
+              Log In
+            </button>
+          </li>
         </ul>
         <div class="hamburger">
           <span class="bar"></span>
@@ -38,6 +40,24 @@
         </div>
       </nav>
     </header>
+
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Login</h2>
+        <form action="/submit-your-login-form" method="POST">
+          <div class="input-group">
+            <label for="email">Gmail:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit" class="log-button">Log In</button>
+        </form>
+      </div>
+    </div>
     <main>
       <section>
         <div class="image-container">
@@ -46,7 +66,8 @@
             alt="Course Cover"
             class="cover-image" />
           <div class="centered-text">
-            Turn Ideas into Reality with Code            <div>
+            Turn Ideas into Reality with Code
+            <div>
               <button class="register-button">Register</button>
             </div>
           </div>
@@ -75,8 +96,8 @@
                 <div class="course-info">
                   <h3>Web development</h3>
                   <p>
-                    Creating user friendly websites and web applications using HTML, CSS, and
-                    JavaScript.
+                    Creating user friendly websites and web applications using
+                    HTML, CSS, and JavaScript.
                   </p>
                   <a href="#" class="course-link">Learn More →</a>
                 </div>
