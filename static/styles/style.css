@@ -354,13 +354,13 @@ footer {
 }
 
 .modal-content {
-  background-color: #ffffff;
+  width: 90%; 
+  max-width: 300px; 
   margin: 10% auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  max-width: 300px;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: white;
 }
 
 .close {
@@ -387,11 +387,12 @@ footer {
 }
 
 .input-group input {
-  width: 90%;
+  width: 100%;
   padding: 8px 10px;
   margin-top: 6px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box; 
 }
 
 .log-button {
