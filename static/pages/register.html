@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<link rel="stylesheet" href="../styles/reset.css">
+<link rel="stylesheet" href="../styles/style.css">
+
 </head>
 <body>
-    
+<div class="form-container">
+    <form>
+        <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+        </div>
+        <div class="input-group">
+            <label for="gmail">Gmail:</label>
+            <input type="email" id="gmail" name="gmail" placeholder="user@gmail.com" required>
+        </div>
+        <div class="input-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" required>
+        </div>
+        <div class="input-group">
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" required>
+        </div>
+        <div class="input-group">
+            <label for="course">Course:</label>
+            <select id="course" name="course">
+                <option value="photoshop">Photoshop</option>
+                <option value="python">Python</option>
+                <option value="game_development">Game Development</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="reason">Why do you need this course?</label>
+            <textarea id="reason" name="reason" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
 </body>
 </html>
