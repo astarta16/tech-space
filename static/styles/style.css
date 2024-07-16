@@ -411,45 +411,48 @@ footer {
 }
 
 .form-container {
-  background-image: url("../images/space.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+
+.image-astrounavt {
+  flex: 0 1 50%; /* Adjusts to take only 40% of the container width and can shrink */
+  background-image: url('../images/file.png'); /* Update the path to your actual image */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 
 form {
-  background: rgba(255, 255, 255, 0.6);
-  padding: 20px;
+  flex: 0 1 30%; /* Adjusts to take 60% of the container width and can shrink */
+  background: rgba(255, 255, 255, 0.9); /* Makes the background slightly more opaque for better readability */
+  padding: 40px; /* Increases padding for a better form layout */
   border-radius: 10px;
-  width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 20px; /* Ensures some space between the image and the form */
 }
 
 .input-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px; /* Slightly more bottom margin for better spacing */
 }
 
 input[type="text"],
 input[type="email"],
 input[type="number"],
 input[type="date"],
-select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: rgba(255, 245, 245, 0.8);
-  font-size: 14px;
-  color: #333;
-}
-
+select,
 textarea {
   width: 100%;
+  padding: 12px; /* Slightly thicker padding for a better feel */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9); /* More opaque for better visibility */
+  font-size: 16px; /* Slightly larger font for easier reading */
+  color: #333;
 }
 
 textarea {
@@ -458,12 +461,13 @@ textarea {
 
 button {
   width: 100%;
-  padding: 10px;
+  padding: 12px; /* Thicker padding for a more substantial button */
   background-color: #041b56;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 16px; /* Larger font size for the button text */
 }
 
 button:hover {

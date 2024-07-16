@@ -1,50 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Registration Form</title>
-<link rel="stylesheet" href="../styles/reset.css">
-<link rel="stylesheet" href="../styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar container">
+        <a href="#" class="nav-logo">TechSpace.</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./static/pages/course.html" class="nav-link">Course</a>
+          </li>
+          <li class="nav-item">
+            <a href="./static/pages/blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="./static/pages/about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn-hover color-btn" onclick="openModal()">
+              Log In
+            </button>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
 
-</head>
-<body>
-<div class="form-container">
-    <form>
-        <div class="input-group">
+    <main>
+      <div class="form-container">
+        <div class="image-astrounavt"></div>
+        <form>
+          <div class="input-group">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="input-group">
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="input-group">
             <label for="surname">Surname:</label>
-            <input type="text" id="surname" name="surname" required>
-        </div>
-        <div class="input-group">
+            <input type="text" id="surname" name="surname" required />
+          </div>
+          <div class="input-group">
             <label for="gmail">Gmail:</label>
-            <input type="email" id="gmail" name="gmail" placeholder="user@gmail.com" required>
-        </div>
-        <div class="input-group">
+            <input
+              type="email"
+              id="gmail"
+              name="gmail"
+              placeholder="user@gmail.com"
+              required />
+          </div>
+          <div class="input-group">
             <label for="age">Age:</label>
-            <input type="number" id="age" name="age" min="1" required>
-        </div>
-        <div class="input-group">
+            <input type="number" id="age" name="age" min="1" required />
+          </div>
+          <div class="input-group">
             <label for="birthday">Birthday:</label>
-            <input type="date" id="birthday" name="birthday" required>
-        </div>
-        <div class="input-group">
+            <input type="date" id="birthday" name="birthday" required />
+          </div>
+          <div class="input-group">
             <label for="course">Course:</label>
             <select id="course" name="course">
-                <option value="photoshop">Photoshop</option>
-                <option value="python">Python</option>
-                <option value="game_development">Game Development</option>
+              <option value="photoshop">Photoshop</option>
+              <option value="python">Python</option>
+              <option value="game_development">Game Development</option>
             </select>
-        </div>
-        <div class="input-group">
+          </div>
+          <div class="input-group">
             <label for="reason">Why do you need this course?</label>
             <textarea id="reason" name="reason" rows="4" required></textarea>
-        </div>
-        <button type="submit">Submit</button>
-    </form>
-</div>
-</body>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
