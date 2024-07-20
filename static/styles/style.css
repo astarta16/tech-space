@@ -421,7 +421,7 @@ footer {
 
 .image-astrounavt {
   flex: 0 1 50%; /* Adjusts to take only 40% of the container width and can shrink */
-  background-image: url('../images/file.png'); /* Update the path to your actual image */
+  background-image: url("../images/file.png"); /* Update the path to your actual image */
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -429,7 +429,12 @@ footer {
 
 form {
   flex: 0 1 30%; /* Adjusts to take 60% of the container width and can shrink */
-  background: rgba(255, 255, 255, 0.9); /* Makes the background slightly more opaque for better readability */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Makes the background slightly more opaque for better readability */
   padding: 40px; /* Increases padding for a better form layout */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -450,7 +455,12 @@ textarea {
   padding: 12px; /* Slightly thicker padding for a better feel */
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.9); /* More opaque for better visibility */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* More opaque for better visibility */
   font-size: 16px; /* Slightly larger font for easier reading */
   color: #333;
 }
@@ -461,15 +471,19 @@ textarea {
 
 button {
   width: 100%;
-  padding: 12px; /* Thicker padding for a more substantial button */
+  padding: 12px;
   background-color: #041b56;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px; /* Larger font size for the button text */
+  font-size: 16px; 
 }
 
 button:hover {
   background-color: #072eaf;
+}
+
+.register-btn-text {
+  color: white;
 }
