@@ -455,13 +455,8 @@ textarea {
   padding: 12px; /* Slightly thicker padding for a better feel */
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.9
-  ); /* More opaque for better visibility */
-  font-size: 16px; /* Slightly larger font for easier reading */
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
   color: #333;
 }
 
@@ -477,7 +472,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px; 
+  font-size: 16px;
 }
 
 button:hover {
