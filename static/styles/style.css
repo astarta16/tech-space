@@ -420,29 +420,24 @@ footer {
 }
 
 .image-astrounavt {
-  flex: 0 1 50%; /* Adjusts to take only 40% of the container width and can shrink */
-  background-image: url("../images/file.png"); /* Update the path to your actual image */
+  flex: 0 1 50%; 
+  background-image: url("../images/file.png"); 
   background-size: cover;
   background-position: center;
   height: 100%;
 }
 
 form {
-  flex: 0 1 30%; /* Adjusts to take 60% of the container width and can shrink */
-  background: rgba(
-    255,
-    255,
-    255,
-    0.9
-  ); /* Makes the background slightly more opaque for better readability */
-  padding: 40px; /* Increases padding for a better form layout */
+  flex: 0 1 30%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-left: 20px; /* Ensures some space between the image and the form */
+  margin-left: 20px;
 }
 
 .input-group {
-  margin-bottom: 20px; /* Slightly more bottom margin for better spacing */
+  margin-bottom: 20px;
 }
 
 input[type="text"],
@@ -452,7 +447,7 @@ input[type="date"],
 select,
 textarea {
   width: 100%;
-  padding: 12px; /* Slightly thicker padding for a better feel */
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.9);
