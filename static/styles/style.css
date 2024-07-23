@@ -515,8 +515,6 @@ button:hover {
   font-weight: 700;
   margin-bottom: 0.5em;
   letter-spacing: 5px;
-  /* font-family: "Inter", sans-serif; */
-  /* font-family: "Ubuntu", sans-serif; */
 }
 
 .hero-content p {
@@ -553,22 +551,44 @@ button:hover {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   color: navy;
+  margin-bottom: 1.5rem;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .feature {
-  margin: 20px;
+  flex: 1 1 30%;
   padding: 20px;
   background-color: #f8f9fa;
   border-radius: 10px;
+  min-width: 280px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .feature h3 {
   color: navy;
   font-size: 1.8em;
+  padding: 1rem;
 }
 
 .feature p {
   font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .feature {
+    flex-basis: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -584,10 +604,6 @@ button:hover {
   .feature {
     padding: 20px 10px;
   }
-
-  .feature {
-    margin: 10px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -596,23 +612,23 @@ button:hover {
   }
 
   .hero-content h1 {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Smaller font size for very small screens */
   }
 
   .hero-content p {
-    font-size: 1em;
+    font-size: 1em; /* Smaller paragraph text for compact display */
   }
 
   .cta-button {
-    font-size: 1em;
-    padding: 8px 16px;
+    font-size: 1em; /* Smaller call-to-action button text */
+    padding: 8px 16px; /* Adjust button padding */
   }
 
   .features-section {
-    padding: 30px 15px;
+    padding: 30px 15px; /* Adjust overall section padding for small screens */
   }
 
   .feature h3 {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Smaller heading font size for features */
   }
 }
