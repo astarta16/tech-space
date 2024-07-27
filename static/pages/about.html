@@ -39,57 +39,48 @@
     </header>
 
     <main>
-      <section class="about-section">
-        <div class="about-container">
-          <h1 class="about-title">About Us</h1>
-          <div class="about-content">
-            <h2>Who We Are</h2>
-            <p>
-              Tech Space Academy is a premier programming academy dedicated to
-              teaching school students the art of coding. Founded by Nini
-              Gedeshuri, our mission is to empower the next generation of
-              developers and innovators through high-quality education and
-              hands-on learning experiences.
-            </p>
-          </div>
-          <div class="about-content">
-            <h2>Our Mission</h2>
-            <p>
-              Our mission is to inspire and educate young minds to become
-              proficient in programming and technology. We believe in providing
-              a supportive and engaging learning environment where students can
-              explore their interests, develop their skills, and build a strong
-              foundation for their future careers.
-            </p>
-          </div>
-          <div class="about-content">
-            <h2>Our Team</h2>
-            <div class="team-section">
-              <div class="team-member">
-                <img
-                  src="../static/images/profile_picture.jpg"
-                  alt="Nini Gedeshuri" />
-                <h3>Nini Gedeshuri</h3>
-                <p>Founder & CEO</p>
-              </div>
-              <div class="team-member">
-                <img
-                  src="../static/images/profile_picture.jpg"
-                  alt="Jane Doe" />
-                <h3>Jane Doe</h3>
-                <p>Lead Instructor</p>
-              </div>
-              <div class="team-member">
-                <img
-                  src="../static/images/profile_picture.jpg"
-                  alt="John Smith" />
-                <h3>John Smith</h3>
-                <p>Curriculum Developer</p>
-              </div>
-            </div>
-          </div>
+      <section class="about-hero">
+        <div class="hero-container">
+          <h1>About Us</h1>
+          <p>Learn more about Tech Space Academy</p>
         </div>
       </section>
+
+      <section class="about-section">
+        <div class="about-container">
+          <div class="about-content">
+            <img
+              src="../images/kiddo.jpg"
+              alt="Who We Are"
+              class="about-image" />
+            <div class="about-text">
+              <h2>Who We Are</h2>
+              <p>
+                Tech Space Academy is a premier programming academy dedicated to
+                teaching school students the art of coding. Founded by Nini
+                Gedeshuri, our mission is to empower the next generation of
+                developers and innovators through high-quality education and
+                hands-on learning experiences.
+              </p>
+            </div>
+          </div>
+          <div class="about-content reverse">
+            <img
+              src="../images/kiddo2.jpg"
+              alt="Our Mission"
+              class="about-image" />
+            <div class="about-text">
+              <h2>Our Mission</h2>
+              <p>
+                Our mission is to inspire and educate young minds to become
+                proficient in programming and technology. We believe in
+                providing a supportive and engaging learning environment where
+                students can explore their interests, develop their skills, and
+                build a strong foundation for their future careers.
+              </p>
+            </div>
+          </div>
+          
     </main>
 
     <footer>
@@ -100,26 +91,17 @@
         </div>
         <div class="social-media">
           <a href="https://facebook.com"
-            ><img src="../static/images/facebook.png" alt="Facebook"
+            ><img src="../images/facebook.png" alt="Facebook"
           /></a>
           <a href="https://instagram.com"
-            ><img src="../static/images/instagram.png" alt="Instagram"
+            ><img src="../images/instagram.png" alt="Instagram"
           /></a>
           <a href="https://tiktok.com"
-            ><img src="../static/images/tik-tok.png" alt="TikTok"
+            ><img src="../images/tik-tok.png" alt="TikTok"
           /></a>
         </div>
       </div>
     </footer>
-
-    <script>
-      function openModal() {
-        document.getElementById("loginModal").style.display = "block";
-      }
-
-      function closeModal() {
-        document.getElementById("loginModal").style.display = "none";
-      }
-    </script>
+    <script src="../js/index.js"></script>
   </body>
 </html>
