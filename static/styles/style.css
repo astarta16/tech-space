@@ -707,38 +707,63 @@ button:hover {
   color: #333;
 }
 
-.team-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+/* FAQ Section */
+.faq-section {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
 }
 
-.team-member {
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-container h2 {
   text-align: center;
-  margin: 20px;
-  width: 200px;
+  font-size: 36px;
+  color: #34588a;
+  margin-bottom: 30px;
 }
 
-.team-member img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  margin-bottom: 10px;
+.faq {
+  border-top: 1px solid #ddd;
 }
 
-.team-member h3 {
+.faq-question {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-question h3 {
   font-size: 20px;
-  color: #061586;
-  margin-bottom: 5px;
+  color: #333;
+  margin: 0;
 }
 
-.team-member p {
+.faq-toggle {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 20px;
+  color: #34588a;
+  font-weight: bold;
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px 0;
+}
+
+.faq-answer p {
   font-size: 16px;
-  color: #333;
+  color: #666;
+  line-height: 1.6;
 }
 
 /* Responsive Styles */
-@media (max-width: 926px) {
+@media (max-width: 768px) {
   .about-content {
     flex-direction: column;
     text-align: center;
