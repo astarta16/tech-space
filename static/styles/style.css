@@ -611,23 +611,23 @@ button:hover {
   }
 
   .hero-content h1 {
-    font-size: 1.5em; /* Smaller font size for very small screens */
+    font-size: 1.5em;
   }
 
   .hero-content p {
-    font-size: 1em; /* Smaller paragraph text for compact display */
+    font-size: 1em; 
   }
 
   .cta-button {
-    font-size: 1em; /* Smaller call-to-action button text */
-    padding: 8px 16px; /* Adjust button padding */
+    font-size: 1em; 
+    padding: 8px 16px;
   }
 
   .features-section {
-    padding: 30px 15px; /* Adjust overall section padding for small screens */
+    padding: 30px 15px; 
   }
 
   .feature h3 {
-    font-size: 1.5em; /* Smaller heading font size for features */
+    font-size: 1.5em;
   }
 }
