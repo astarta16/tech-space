@@ -706,61 +706,6 @@ button:hover {
   color: #333;
 }
 
-/* FAQ Section */
-.faq-section {
-  background-color: #f9f9f9;
-  padding: 50px 20px;
-}
-
-.faq-container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.faq-container h2 {
-  text-align: center;
-  font-size: 36px;
-  color: #34588a;
-  margin-bottom: 30px;
-}
-
-.faq {
-  border-top: 1px solid #ddd;
-}
-
-.faq-question {
-  border-bottom: 1px solid #ddd;
-  padding: 20px 0;
-  cursor: pointer;
-  position: relative;
-}
-
-.faq-question h3 {
-  font-size: 20px;
-  color: #333;
-  margin: 0;
-}
-
-.faq-toggle {
-  position: absolute;
-  right: 0;
-  top: 20px;
-  font-size: 20px;
-  color: #34588a;
-  font-weight: bold;
-}
-
-.faq-answer {
-  display: none;
-  padding: 10px 0;
-}
-
-.faq-answer p {
-  font-size: 16px;
-  color: #666;
-  line-height: 1.6;
-}
-
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
