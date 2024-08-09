@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/reset.css" />
     <link rel="stylesheet" href="../styles/style.css" />
     <title>blog</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar container">
+        <a href="../../index.html" class="nav-logo">TechSpace.</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../../index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./course.html" class="nav-link">Course</a>
+          </li>
+          <li class="nav-item">
+            <a href="./blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn-hover color-btn" onclick="openModal()">
+              Log In
+            </button>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Login</h2>
+        <form class="log-form">
+          <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit" class="log-button">Log In</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
