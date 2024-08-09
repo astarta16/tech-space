@@ -750,7 +750,6 @@ button:hover {
   }
 }
 
-
 .faq-question {
   display: flex;
   align-items: center;
@@ -761,7 +760,7 @@ button:hover {
   font-size: 1.2em;
   cursor: pointer;
   border: none;
-  background-color: #0259E9;
+  background-color: #0259e9;
   color: white;
   outline: none;
   transition: background-color 0.3s ease;
@@ -780,7 +779,7 @@ button:hover {
 
 .faq-icon {
   font-size: 1.5em;
-  margin-left: 0.5em; 
+  margin-left: 0.5em;
 }
 
 .faq-answer {
@@ -795,9 +794,76 @@ button:hover {
 
 .faq-item {
   margin: 8px;
-
 }
 
 .faq-answer p {
   margin: 0;
+}
+
+.blog-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.blog-post {
+  margin-bottom: 40px;
+}
+
+.blog-post h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blog-post .date {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.read-more:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .blog-container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .blog-post h2 {
+    font-size: 1.5em;
+  }
 }
