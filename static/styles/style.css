@@ -867,7 +867,6 @@ p {
   background-color: #0056b3;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
   .blog-container {
     padding: 10px;
