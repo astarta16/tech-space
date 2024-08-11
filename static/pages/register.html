@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" />
     <link rel="stylesheet" href="../styles/reset.css" />
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
@@ -30,21 +33,30 @@
         <div class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
-          <span the="bar"></span>
+          <span class="bar"></span>
         </div>
       </nav>
     </header>
-
     <main>
       <div class="form-container">
         <form class="register-form">
           <div class="input-group">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required />
           </div>
           <div class="input-group">
             <label for="surname">Surname:</label>
-            <input type="text" id="surname" name="surname" required />
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              placeholder="Enter your surname"
+              required />
           </div>
           <div class="input-group">
             <label for="email">Email:</label>
@@ -73,13 +85,17 @@
           </div>
           <div class="input-group">
             <label for="reason">Why do you need this course?</label>
-            <textarea id="reason" name="reason" rows="4" required></textarea>
+            <textarea
+              id="reason"
+              name="reason"
+              placeholder="Explain your reasons"
+              rows="4"
+              required></textarea>
           </div>
           <button type="submit">Submit</button>
         </form>
       </div>
     </main>
-
     <script src="../js/index.js"></script>
   </body>
 </html>
