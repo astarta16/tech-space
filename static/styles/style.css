@@ -492,6 +492,20 @@ button:hover {
   color: white;
 }
 
+.modal-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.modal-footer a {
+  color: #041b56;
+  text-decoration: none;
+}
+
+.modal-footer a:hover {
+  text-decoration: underline;
+}
+
 /* home page */
 .hero-section {
   background-image: url("../images/daniele-levis-pelusi--aEpe2N916c-unsplash.jpg");
