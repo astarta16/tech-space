@@ -881,3 +881,86 @@ p {
   }
 }
 
+/* Style specific to the quiz main container */
+#quiz-main {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#quiz-main h1 {
+  margin-bottom: 20px;
+  color: #0056b3;
+}
+
+#quiz-main #quiz-container {
+  text-align: center;
+}
+
+#quiz-main #score {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#quiz-main button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#quiz-main button:hover {
+  background-color: #218838;
+}
+
+#quiz-main #question {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#quiz-main ul#answers-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#quiz-main ul#answers-list li button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #f8f9fa;
+  border: 2px solid #ccc;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#quiz-main ul#answers-list li button:hover {
+  background-color: #e2e6ea;
+}
+
+#quiz-main ul#answers-list li button.correct {
+  background-color: #28a745;
+  color: white;
+  border-color: #28a745;
+}
+
+#quiz-main ul#answers-list li button.wrong {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+#quiz-main #resultMessage {
+  font-size: 18px;
+  color: #007bff;
+  margin-top: 20px;
+}
