@@ -915,7 +915,7 @@ p {
   margin-bottom: 20px;
 }
 
-button {
+#startNextQuiz {
   font-size: 18px;
   padding: 12px 24px;
   background-color: #007bff;
@@ -927,7 +927,7 @@ button {
   margin: 20px 0;
 }
 
-button:hover {
+#startNextQuiz:hover {
   background-color: #0056b3;
   transform: scale(1.05);
 }
