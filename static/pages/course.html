@@ -40,20 +40,20 @@
         <a href="../../index.html" class="nav-logo">TechSpace.</a>
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="../../index.html" class="nav-link">Home</a>
+            <a href="../../index.html" class="nav-link">მთავარი</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Course</a>
+            <a href="#" class="nav-link">კურსები</a>
           </li>
           <li class="nav-item">
-            <a href="./about.html" class="nav-link">About</a>
+            <a href="./about.html" class="nav-link">ჩვენს შესახებ</a>
           </li>
           <li class="nav-item">
             <a href="./quiz.html" class="nav-link">Quiz</a>
           </li>
           <li class="nav-item">
             <button class="btn-hover color-btn" onclick="openModal()">
-              Log In
+              შესვლა
             </button>
           </li>
         </ul>
@@ -68,21 +68,21 @@
     <div id="loginModal" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
-        <h2>Login</h2>
+        <h2>შესვლა</h2>
         <form>
           <div class="input-group">
-            <label for="email">Email:</label>
+            <label for="email">შეიყვანე იმეილი:</label>
             <input type="email" id="email" name="email" required />
           </div>
           <div class="input-group">
-            <label for="password">Password:</label>
+            <label for="password">შეიყვანე პაროლი</label>
             <input type="password" id="password" name="password" required />
           </div>
-          <button type="submit" class="log-button">Log In</button>
+          <button type="submit" class="log-button">შესვლა</button>
         </form>
         <p class="modal-footer">
-          Don't have an account?
-          <a href="./register.html">Register</a>
+          არ გაქვს ექაუნთი?
+          <a href="./register.html">დარეგისტრირდი</a>
         </p>
       </div>
     </div>
@@ -95,10 +95,12 @@
             alt="Course Cover"
             class="cover-image" />
           <div class="centered-text">
-            Turn Ideas into Reality with Code
+            განავითარე შენი ცოდნა და უნარები ჩვენს კურსებთან ერთად!
             <div>
               <button class="register-button">
-                <a href="./register.html" class="register-text">Register</a>
+                <a href="./register.html" class="register-text"
+                  >დარეგისტრირდი</a
+                >
               </button>
             </div>
           </div>
@@ -108,77 +110,96 @@
       <section>
         <div class="container">
           <div class="courses-section">
-            <h2 class="courses-title">Courses</h2>
+            <h2 class="courses-title">კურსების კატალოგი</h2>
             <div class="courses-grid">
               <div class="course-card">
                 <img src="../images/python.png" alt="Python" />
                 <div class="course-info">
-                  <h3>Python</h3>
+                  <h3>პითონი</h3>
                   <p>
-                    A beginner-friendly programming language used for various
-                    types of software development.
+                    მარტივი და მოქნილი პროგრამირების ენა, რომელიც პოპულარულია
+                    ვებ-განვითარებაში, მონაცემთა მეცნიერებაში და
+                    ავტომატიზაციაში.გამოირჩევა სიმარტივითა და კოდის
+                    გამჭვირვალობით. იგი განკუთვნილია როგორც დამწყებთათვის, ასევე
+                    პროფესიონალებისთვის
                   </p>
-                  <a href="#" class="course-link">Learn More →</a>
+                  <a href="#" class="course-link">შეიტყვე მეტი</a>
                 </div>
               </div>
 
               <div class="course-card">
                 <img src="../images/web.png" alt="Web Development" />
                 <div class="course-info">
-                  <h3>Web Development</h3>
+                  <h3>ვებ დეველოპმენტი</h3>
                   <p>
-                    Creating user friendly websites and web applications using
-                    HTML, CSS, and JavaScript.
+                    ვებ დეველოპმენტი არის ვებგვერდებისა და ვებაპლიკაციების
+                    შექმნის პროცესი, რომელიც მოიცავს დიზაინს, კოდირებას და
+                    სერვერების მართვას, რაც აუცილებელია ციფრულ სამყაროში
+                    წარმატებისთვის. შეისწავლე HTML, CSS, JavaScript
                   </p>
-                  <a href="#" class="course-link">Learn More →</a>
+                  <a href="#" class="course-link">შეიტყვე მეტი</a>
                 </div>
               </div>
 
               <div class="course-card">
                 <img src="../images/game.png" alt="Game Development" />
                 <div class="course-info">
-                  <h3>Game Development</h3>
+                  <h3>თამაშების აწყობა</h3>
                   <p>
-                    Designing, creating, and testing video games for various
-                    platforms. Study Pygame.
+                    კურსი გაძლევთ შესაძლებლობას, ისწავლოთ თამაშების დიზაინისა და
+                    განვითარების საფუძვლები, პროგრამირების ენები და
+                    ინსტრუმენტები, რაც დაგეხმარებათ შექმნათ ინტერაქტიული, 2D და
+                    3D საინტერესო და ლოგიკური თამაშები.
                   </p>
-                  <a href="#" class="course-link">Learn More →</a>
+                  <a href="#" class="course-link">შეიტყვე მეტი</a>
                 </div>
               </div>
 
               <div class="course-card">
                 <img src="../images/photoshop.png" alt="Photoshop" />
                 <div class="course-info">
-                  <h3>Photoshop</h3>
+                  <h3>ფოტოშოპი</h3>
                   <p>
-                    A software used for editing and creating images and
-                    graphics.
+                    Photoshop არის გრაფიკული რედაქტირების პროგრამა, რომელიც
+                    გამოიყენება სურათების დამუშავებისთვის, დიზაინის შექმნისთვის
+                    და ფოტომანიპულაციებისთვის. ის გთავაზობთ მრავალფუნქციურ
+                    ინსტრუმენტებს, რაც საშუალებას გაძლევთ პროფესიონალურად და
+                    კრეატიულად იმუშაოთ ვიზუალურ მასალაზე adobe XD პროგრამის
+                    დახმარებით.
                   </p>
-                  <a href="#" class="course-link">Learn More →</a>
+                  <a href="#" class="course-link">შეიტყვე მეტი</a>
                 </div>
               </div>
 
               <div class="course-card">
                 <img src="../images/scratch.png" alt="Scratch" />
                 <div class="course-info">
-                  <h3>Scratch</h3>
+                  <h3>ვიზუალური პროგრამირება</h3>
                   <p>
-                    Designed to teach coding concepts through drag-and-drop
-                    blocks.
+                    Scratch არის ვიზუალური პროგრამირების ენა, რომელიც
+                    სპეციალურად შექმნილია ბავშვებისთვის 7-10 წლამდე და
+                    დამწყებთათვის.მისი მეშვეობით, მომხმარებლებს შეუძლიათ შექმნან
+                    ანიმაციები, თამაშები და ინტერაქტიული ისტორიები მარტივად,
+                    კოდის ბლოკების გადაადგილებით და ლოგიკური კავშირებით ბლოკებს
+                    შორის.
                   </p>
-                  <a href="#" class="course-link">Learn More →</a>
+                  <a href="#" class="course-link">შეიტყვე მეტი</a>
                 </div>
               </div>
 
               <div class="course-card">
                 <img src="../images/robotic.png" alt="DevOps" />
                 <div class="course-info">
-                  <h3>Robotics</h3>
+                  <h3>რობოტიკა</h3>
                   <p>
-                    Explore the field of robotics, understanding the mechanics
-                    and software involved.
+                    რობოტიკა არის მეცნიერების დარგი, რომელიც ეხება რობოტების
+                    შექმნას, პროგრამირებას და გამოყენებას, აერთიანებს მექანიკას,
+                    ელექტრონიკასა და პროგრამირებას სხვადასხვა ამოცანების
+                    შესასრულებლად.რობოტიკა გამოიყენება მრავალი სფეროში, მათ
+                    შორის წარმოებაში, სამედიცინოში, განათლებასა და ყოველდღიურ
+                    ცხოვრებაში.
                   </p>
-                  <a href="#" class="course-link">Learn More →</a>
+                  <a href="#" class="course-link">შეიტყვე მეტი</a>
                 </div>
               </div>
             </div>
