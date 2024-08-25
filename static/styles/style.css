@@ -1,3 +1,5 @@
+@import url(./footer.css);
+@import url(./toast.css);
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
@@ -307,76 +309,6 @@
 
   .course-link {
     font-size: 18px;
-  }
-}
-
-/* footer styles */
-footer {
-  color: navy;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.footer-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: auto;
-  padding: 20px 0;
-}
-
-.footer-content {
-  display: flex;
-  align-items: center;
-}
-
-.footer-content p {
-  font-weight: 700;
-  font-size: 20px;
-  color: #34588a;
-  margin: 0;
-  line-height: 1.5;
-}
-
-.social-media a {
-  transition: transform 0.3s ease;
-}
-
-.social-media a:hover {
-  transform: scale(1.1);
-}
-
-.social-media a img {
-  width: 25px;
-  margin-left: 10px;
-}
-
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin-top: 20px;
-  }
-
-  .social-media,
-  .footer-content {
-    flex: 1 100%;
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  .footer-content {
-    align-items: center;
-  }
-
-  .footer-content p {
-    padding-right: 0;
   }
 }
 
@@ -1175,27 +1107,4 @@ p {
 .blog-post p {
   font-size: 1.2em;
   color: #666;
-}
-
-.toast {
-  visibility: hidden;
-  min-width: 250px;
-  background-color: rgba(13, 123, 8, 0.8);
-  color: #fff;
-  text-align: center;
-  border-radius: 5px;
-  padding: 16px;
-  position: fixed;
-  z-index: 1;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 17px;
-  transition: visibility 0s, opacity 0.5s linear;
-  opacity: 0;
-}
-
-.toast.show {
-  visibility: visible;
-  opacity: 1;
 }
