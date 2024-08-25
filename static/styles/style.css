@@ -362,7 +362,7 @@ button {
   padding: 20px;
 }
 
-.hero-container h1 {
+.hero-container h2 {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 0.5em;
@@ -438,7 +438,7 @@ button {
 }
 
 @media (max-width: 480px) {
-  .hero-container h1 {
+  .hero-container h2 {
     font-size: 36px;
   }
 
