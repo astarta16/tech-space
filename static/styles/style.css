@@ -407,7 +407,7 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 90%;
-  max-width: 300px;
+  max-width: 500px;
   margin: 10% auto;
 }
 
@@ -545,6 +545,22 @@ button {
 
 .modal-footer a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 1200px) {
+  .modal-content {
+    margin-top: 30%;
+    padding: 25px;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .modal-content {
+    margin-top: 30%;
+    padding: 20px;
+    max-width: 350px;
+  }
 }
 
 /* home page */
@@ -923,7 +939,7 @@ p {
 }
 
 #quiz-main {
-  background-color: #0056b3; /* Blue background */
+  background-color: navy;
   padding: 40px;
   margin: 30px auto;
   width: 80%;
