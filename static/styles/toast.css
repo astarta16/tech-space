@@ -10,8 +10,12 @@
   z-index: 1;
   bottom: 30px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   font-size: 17px;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  -o-transition: visibility 0s, opacity 0.5s linear;
   transition: visibility 0s, opacity 0.5s linear;
   opacity: 0;
 }

@@ -1,0 +1,159 @@
+.hero-section {
+  background-image: url("../images/daniele-levis-pelusi--aEpe2N916c-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  letter-spacing: 5px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 2em;
+}
+
+.cta-button {
+  font-size: 1em;
+  padding: 20px 20px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+
+.cta-button:hover {
+  background-color: navy;
+}
+
+.features-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.features-section h2 {
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: navy;
+  margin-bottom: 1.5rem;
+}
+
+.features-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* feature section styles */
+.feature {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 30%;
+  flex: 1 1 30%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  min-width: 280px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+  color: navy;
+  font-size: 1.8em;
+  padding: 1rem;
+}
+
+.feature p {
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .features-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .feature {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2em;
+  }
+
+  .hero-content p {
+    font-size: 1.2em;
+  }
+
+  .features-section,
+  .feature {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    height: 60vh;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  .cta-button {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+
+  .features-section {
+    padding: 30px 15px;
+  }
+
+  .feature h3 {
+    font-size: 1.5em;
+  }
+}
