@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".register-form");
+  const toast = document.getElementById("toast");
 
   if (!form) {
-    return; // Stop script execution if the form is not found
+    return;
   }
 
   form.addEventListener("submit", function (event) {
@@ -59,7 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     if (isValid) {
-      form.submit();
+      showToast();
+      setTimeout(() => {
+        form.submit();
+      }, 2000);
     }
   });
 
@@ -68,5 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
     errorElement.className = "error-message";
     errorElement.innerText = message;
     input.parentNode.appendChild(errorElement);
+  }
+
+  function showToast() {
+    toast.classList.add("show");
+    setTimeout(() => {
+      toast.classList.remove("show");
+    }, 4000);
   }
 });
