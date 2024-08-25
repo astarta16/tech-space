@@ -1,24 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.querySelector(".register-form");
-  
-    form.addEventListener("submit", function(event) {
+  const form = document.querySelector(".register-form");
+
+  if (form) {
+    form.addEventListener("submit", function (event) {
       event.preventDefault();
-  
+
       const inputs = form.querySelectorAll("input, textarea, select");
       let isValid = true;
-  
-      inputs.forEach(input => {
+
+      inputs.forEach((input) => {
         const errorContainer = input.parentNode.querySelector(".error-message");
         if (errorContainer) {
           errorContainer.remove();
         }
-  
+
         switch (input.id) {
           case "name":
           case "surname":
           case "reason":
             if (input.value.trim() === "") {
-              showError(input, `${input.id.charAt(0).toUpperCase() + input.id.slice(1)} is required`);
+              showError(
+                input,
+                `${
+                  input.id.charAt(0).toUpperCase() + input.id.slice(1)
+                } is required`
+              );
               isValid = false;
             }
             break;
@@ -48,17 +54,19 @@ document.addEventListener("DOMContentLoaded", () => {
             break;
         }
       });
-  
+
       if (isValid) {
-        form.submit(); 
+        form.submit();
       }
     });
-  
+
     function showError(input, message) {
       const errorElement = document.createElement("div");
       errorElement.className = "error-message";
       errorElement.innerText = message;
       input.parentNode.appendChild(errorElement);
     }
-  });
-  
+  } else {
+    console.error("Form with class 'register-form' not found.");
+  }
+});

@@ -214,12 +214,6 @@ header {
   padding: 0 20px;
 }
 
-@media (min-width: 992px) {
-  .courses-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 .course-card {
   background: navy;
   padding: 10px;
@@ -270,6 +264,44 @@ header {
   margin: 20px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  .courses-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .courses-grid {
+    grid-template-columns: 1fr; 
+  }
+}
+
+@media (max-width: 400px) {
+  .courses-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .course-card {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5px; 
+  }
+
+  .course-info p {
+    margin: 10px 0;
+  }
+
+  .course-info h3 {
+    font-size: 18px;
+  }
+
+  .course-link {
+    font-size: 18px; 
+  }
 }
 
 /* footer styles */
