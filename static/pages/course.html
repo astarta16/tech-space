@@ -72,8 +72,14 @@
         <form>
           <div class="input-group">
             <label for="email">შეიყვანე იმეილი:</label>
-            <input type="email" id="email" name="email" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email" />
           </div>
+
           <div class="input-group">
             <label for="password">შეიყვანე პაროლი</label>
             <input
@@ -83,6 +89,7 @@
               required
               autocomplete="current-password" />
           </div>
+
           <button type="submit" class="log-button">შესვლა</button>
         </form>
         <p class="modal-footer">
