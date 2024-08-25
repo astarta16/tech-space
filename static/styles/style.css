@@ -7,13 +7,7 @@
 @import url(./about.css);
 @import url(./faq.css);
 @import url(./blog.css);
-@import "@fontsource/firago/400.css";
-@import "@fontsource/firago/500.css";
-@import "@fontsource/firago/600.css";
-@import "@fontsource/firago/700.css";
-@import "@fontsource/firago/800.css";
-@import "@fontsource/firago/900.css";
-
+@import "@fontsource/firago";
 body {
   font-family: "FiraGO", sans-serif;
 }
