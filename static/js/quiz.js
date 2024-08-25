@@ -2,20 +2,22 @@ let currentScore = 0;
 let questionCount = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("startNextQuiz").style.display = "block"; 
+  document.getElementById("startNextQuiz").style.display = "block";
   document.getElementById("question").style.display = "none";
   document.getElementById("answers-list").style.display = "none";
 });
 
 function loadQuiz() {
-  if (questionCount > 0) {
-    fetch("https://opentdb.com/api.php?amount=1&type=multiple")
-      .then((response) => response.json())
-      .then((data) => displayQuestion(data.results[0]))
-      .catch((error) => console.error("Error fetching quiz:", error));
+  if (questionCount === 0) {
+    document.getElementById("startNextQuiz").textContent = "Next Question";
   }
+
+  fetch("https://opentdb.com/api.php?amount=1&type=multiple")
+    .then((response) => response.json())
+    .then((data) => displayQuestion(data.results[0]))
+    .catch((error) => console.error("Error fetching quiz:", error));
+
   questionCount++;
-  document.getElementById("startNextQuiz").textContent = "Next Question"; 
   document.getElementById("question").style.display = "block";
   document.getElementById("answers-list").style.display = "block";
 }
@@ -28,7 +30,7 @@ function displayQuestion(questionData) {
     ...questionData.incorrect_answers,
     questionData.correct_answer,
   ];
-  shuffleArray(answers); 
+  shuffleArray(answers);
 
   const answersList = document.getElementById("answers-list");
   answersList.innerHTML = "";
@@ -41,12 +43,14 @@ function displayQuestion(questionData) {
     answerItem.appendChild(answerButton);
     answersList.appendChild(answerItem);
   });
+
+  document.getElementById("resultMessage").textContent = "";
 }
 
 function selectAnswer(selected, correct) {
   const allButtons = document.querySelectorAll("#answers-list button");
   allButtons.forEach((button) => {
-    button.disabled = true; 
+    button.disabled = true;
     if (button.textContent === correct) {
       button.classList.add("correct");
     } else {
@@ -66,7 +70,7 @@ function selectAnswer(selected, correct) {
   if (currentScore >= 20) {
     document.getElementById("resultMessage").textContent =
       "Congratulations! You are a winner!";
-    document.getElementById("startNextQuiz").style.display = "none"; 
+    document.getElementById("startNextQuiz").style.display = "none";
   }
 }
 

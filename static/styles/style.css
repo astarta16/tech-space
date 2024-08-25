@@ -916,9 +916,8 @@ p {
   }
 }
 
-/* Main container for the quiz */
 #quiz-main {
-  background-color: #fff;
+  background-color: #0056b3; /* Blue background */
   padding: 40px;
   margin: 30px auto;
   width: 80%;
@@ -927,75 +926,72 @@ p {
   border-radius: 10px;
   border: 1px solid #ccc;
   height: 600px;
+  color: #ffffff; 
 }
 
 #quiz-main h1 {
   font-size: 28px;
-  color: #0056b3;
+  color: #ffffff;
   font-weight: 600;
   margin-bottom: 30px;
   text-align: center;
   animation: fadeIn 1s ease-out;
 }
 
-#quiz-container {
-  text-align: center;
-  padding: 20px;
-}
-
-#score {
-  font-size: 22px;
-  font-weight: bold;
-  color: #007bff;
+#quiz-intro {
+  font-size: 24px;
+  color: #f1f1f1;
   margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  animation: fadeIn 1.5s ease-out;
 }
 
 #startNextQuiz {
   font-size: 18px;
   padding: 12px 24px;
-  background-color: #007bff;
-  color: #ffffff;
-  border-radius: 5px;
+  background-color: #ffffff;
+  color: #0056b3;
+  border-radius: 8px;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #startNextQuiz:hover {
-  background-color: #0056b3;
+  background-color: #e0e0e0;
   transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Question styles */
 #question {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   margin: 20px 0;
-  color: #333;
+  color: #ffffff;
   animation: fadeIn 0.5s ease-out;
-}
-
-ul#answers-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 600px;
 }
 
 ul#answers-list li button {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   margin-top: 10px;
-  background-color: #030343;
-  border: 2px solid #007bff;
+  background-color: #ffffff;
+  color: #0056b3;
+  border: none;
   text-align: center;
   font-size: 16px;
-  transition: all 0.3s;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 ul#answers-list li button:hover {
-  background-color: #044e68;
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 ul#answers-list li button.correct {
@@ -1010,26 +1006,15 @@ ul#answers-list li button.wrong {
 
 #resultMessage {
   font-size: 18px;
-  color: #007bff;
+  color: #ffffff;
   margin-top: 20px;
   font-weight: 500;
   animation: fadeIn 2s ease-in-out;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .gallery-section {
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .gallery-title {
