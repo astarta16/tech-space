@@ -1085,14 +1085,14 @@ ul#answers-list li button.wrong {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  border-radius: 15px; 
+  border-radius: 15px;
   overflow: hidden;
 }
 
 .cover-image {
   width: 100%;
   height: auto;
-  max-height: 400px; 
+  max-height: 400px;
   object-fit: cover;
 }
 
@@ -1124,8 +1124,8 @@ ul#answers-list li button.wrong {
   font-size: 16px;
   font-weight: bold;
   color: white;
-  width: auto; 
-  min-width: 150px; 
+  width: auto;
+  min-width: 150px;
   max-width: 300px;
 }
 
@@ -1144,13 +1144,6 @@ ul#answers-list li button.wrong {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-#blog-posts h1 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2.5em;
-  color: #333;
 }
 
 .blog-post {
@@ -1178,6 +1171,14 @@ ul#answers-list li button.wrong {
   color: #666;
 }
 
+.blog-title {
+  text-align: center;
+  padding: 40px;
+  font-size: 30px;
+  font-weight: 700;
+  color: navy;
+}
+
 .blog-post a {
   display: inline-block;
   margin-top: 10px;
@@ -1203,10 +1204,6 @@ ul#answers-list li button.wrong {
     padding: 10px;
   }
 
-  #blog-posts h1 {
-    font-size: 2em;
-  }
-
   .blog-post h2 {
     font-size: 1.5em;
   }
@@ -1219,6 +1216,59 @@ ul#answers-list li button.wrong {
     width: auto;
     padding: 10px 20px;
     font-size: 14px;
-    min-width: 120px; 
+    min-width: 120px;
   }
+}
+
+/* Blog Categories Section */
+#blog-filters {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#categories-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 10px;
+  justify-items: center;
+}
+
+.category-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  background-color: #fbfbfb;
+  color: navy;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Blog Post Styles */
+.blog-post {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.blog-post h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.blog-post p {
+  font-size: 1.2em;
+  color: #666;
 }

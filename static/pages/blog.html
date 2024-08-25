@@ -117,42 +117,17 @@
       </section>
 
       <section id="blog-posts">
-        <h1>ბლოგი</h1>
-        <article class="blog-post">
-          <h2>როგორ დავიწყოთ Python პროგრამირება</h2>
-          <p>
-            Python არის მარტივი და ძლიერი პროგრამირების ენა, რომელიც იდეალურია
-            დამწყებთათვის...
-          </p>
-        </article>
-        <article class="blog-post">
-          <h2>ვებ განვითარება HTML და CSS-ის გამოყენებით</h2>
-          <p>
-            გაიგეთ როგორ შექმნათ ვებ გვერდი HTML და CSS-ის გამოყენებით, პირველი
-            ნაბიჯებიდან დაწყებული...
-          </p>
-        </article>
-        <article class="blog-post">
-          <h2>გრაფიკული დიზაინის შესავალი: Adobe Photoshop</h2>
-          <p>
-            Adobe Photoshop არის ერთ-ერთი ყველაზე პოპულარული ინსტრუმენტი
-            გრაფიკულ დიზაინში...
-          </p>
-        </article>
-        <article class="blog-post">
-          <h2>რობოტიკის საფუძვლები Arduino-ს გამოყენებით</h2>
-          <p>
-            შეისწავლეთ რობოტიკის საფუძვლები Arduino-ს პლატფორმის გამოყენებით და
-            შექმენით თქვენი პირველი რობოტი...
-          </p>
-        </article>
-        <article class="blog-post">
-          <h2>მობილური აპლიკაციების შექმნა Flutter-ით</h2>
-          <p>
-            Flutter არის Google-ის ღია კოდის ჩარჩო, რომელიც საშუალებას გაძლევთ
-            შექმნათ ლამაზი მობილური აპლიკაციები...
-          </p>
-        </article>
+        <h2 class="blog-title">ბლოგი</h2>
+        <section id="blog-filters">
+          <div id="categories-section">
+            <button class="category-button" data-category="All">ყველა</button>
+            <button class="category-button" data-category="Python">
+              Python
+            </button>
+            <button class="category-button" data-category="HTML">HTML</button>
+            <button class="category-button" data-category="CSS">CSS</button>
+          </div>
+        </section>
       </section>
     </main>
 
@@ -182,5 +157,6 @@
     <script src="../js/validation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="../js/advice.js"></script>
+    <script src="../js/blog.js"></script>
   </body>
 </html>
