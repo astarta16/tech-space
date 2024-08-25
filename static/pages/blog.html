@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Explore Our blog - Tech Space Academy</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta
+      name="description"
+      content="Explore our diverse range of programming courses at Tech Space Academy. From Python to Game Development, start your coding journey with us today!" />
+    <meta
+      name="keywords"
+      content="coding, programming, courses, Python, Web Development, Game Development, Photoshop, Scratch, Robotics" />
+    <meta name="author" content="Tech Space Academy" />
+
+    <meta
+      property="og:title"
+      content="Explore Our Courses - Tech Space Academy" />
+    <meta
+      property="og:description"
+      content="Discover a variety of programming courses tailored for all skill levels at Tech Space Academy, from beginner to advanced." />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/astarta16/tech-space/main/static/images/tech-space.jpg" />
+    <meta
+      property="og:url"
+      content="https://astarta16.github.io/tech-space/static/pages/course.html" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar container">
+        <a href="../../index.html" class="nav-logo">TechSpace.</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../../index.html" class="nav-link">მთავარი</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">კურსები</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">მიზანი</a>
+          </li>
+          <li class="nav-item">
+            <a href="./blog.html" class="nav-link">ბლოგი</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn-hover color-btn" onclick="openModal()">
+              შესვლა
+            </button>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>შესვლა</h2>
+        <form>
+          <div class="input-group">
+            <label for="email">შეიყვანე იმეილი:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email" />
+          </div>
+
+          <div class="input-group">
+            <label for="password">შეიყვანე პაროლი</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              autocomplete="current-password" />
+          </div>
+
+          <button type="submit" class="log-button">შესვლა</button>
+        </form>
+        <p class="modal-footer">
+          არ გაქვს ექაუნთი?
+          <a href="./register.html">დარეგისტრირდი</a>
+        </p>
+      </div>
+    </div>
+
+    <main>
+      <section id="advice-section">
+        <div class="advice-image-container">
+          <img
+            src="../images/Wavy Elegant Lines Navy Background.jpg"
+            alt="Daily Advice Background"
+            class="cover-image" />
+          <div class="centered-text">
+            <h2 id="advice-text">მიიღე ყოველდღიური რჩევა</h2>
+            <button id="show-advice" class="advice-button">
+              Show Daily Advice
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog-posts">
+        <h1>Blog</h1>
+        <article class="blog-post">
+          <h2>Understanding JavaScript Closures</h2>
+          <p>JavaScript closures are a fundamental concept...</p>
+          <a href="post1.html">Read More</a>
+        </article>
+        <article class="blog-post">
+          <h2>Getting Started with CSS Grid</h2>
+          <p>CSS Grid is a powerful layout system...</p>
+          <a href="post2.html">Read More</a>
+        </article>
+        <article class="blog-post">
+          <h2>Getting Started with CSS Grid</h2>
+          <p>CSS Grid is a powerful layout system...</p>
+          <a href="post2.html">Read More</a>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container container">
+        <a href="#" class="nav-logo">TechSpace.</a>
+        <div class="footer-content">
+          <p>დაგვიკავშირდით: +995 23 12 23</p>
+        </div>
+        <div class="social-media">
+          <a href="https://facebook.com"
+            ><img src="../images/facebook.png" alt="Facebook"
+          /></a>
+          <a href="https://instagram.com"
+            ><img src="../images/instagram.png" alt="Instagram"
+          /></a>
+          <a href="https://tiktok.com"
+            ><img src="../images/tik-tok.png" alt="TikTok"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/faq.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/validation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/advice.js"></script>
+  </body>
+</html>
